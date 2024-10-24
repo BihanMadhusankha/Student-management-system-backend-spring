@@ -16,4 +16,22 @@ public class Student {
     private String pname;
     private String paddress;
     private String pcontact;
+
+    public boolean customNullValue(Student student){
+
+         return (
+                        student.name == null ||
+                        student.age == null ||
+                        student.contact == null ||
+                        student.pname == null ||
+                        student.paddress == null ||
+                        student.pcontact == null ||
+                        student.name.isEmpty()  ||
+                        student.age.isEmpty() ||
+                        student.contact.isEmpty() ||
+                        student.pname.isEmpty() ||
+                        student.paddress.isEmpty() ||
+                        student.pcontact.isEmpty()
+        ) ? true: false;
+    }
 }
